@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+  font-weight: bolder;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout {
+  padding: 0.2rem 1rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: none;
+  cursor: pointer;
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  width: fit-content;
+}
+.burgerMenu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuIcon {
+  color: white;
+}
+
+.sidebar {
+  display: none;
+}
+
+.sideLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+@media (width<1150px) {
+  .links {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 2rem 1rem;
+    height: 100vh;
+    background-color: rgb(37, 119, 225);
+    position: fixed;
+    right: -1000px;
+    top: 0px;
+    transition: right 0.5s ease;
+  }
+
+  .sidebarOpen {
+    right: 0px;
+  }
+
+  .closeBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+}
+
+@media (width<576px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+}

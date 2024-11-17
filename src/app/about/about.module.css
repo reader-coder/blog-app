@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  padding: 8rem 6rem;
+  height: 100vh;
+  display: flex;
+  gap: 4em;
+  background: url("/gradient2.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.textContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+}
+.description {
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+}
+
+.learnMore {
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: var(--btn);
+  border: none;
+  border-radius: 50px;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.imgContainer {
+  flex: 1;
+  position: relative;
+}
+
+.img {
+  object-fit: contain;
+  animation: heartbeat 12s linear infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
