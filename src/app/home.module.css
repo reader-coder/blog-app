@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   padding: 8rem 6rem;
-  height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   gap: 4em;
 }
@@ -43,6 +43,7 @@
 .imgContainer {
   flex: 1;
   position: relative;
+  min-height: 20rem;
 }
 
 .img {

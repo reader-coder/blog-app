@@ -25,6 +25,12 @@
   font-size: 1.5rem;
 }
 
+.desc {
+  color: rgb(137, 137, 137);
+  font-family: var(--secondary-font);
+  font-size: 0.8rem;
+}
+
 .readMore {
   font-family: var(--secondary-font);
 }

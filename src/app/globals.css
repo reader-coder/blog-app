@@ -35,3 +35,8 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (width<768px) {
+  .container {
+    padding: 1rem;
+  }
+}

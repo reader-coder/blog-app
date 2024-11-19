@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  gap: 5px;
+}
+.author {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgContainer {
+  position: relative;
+  width: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.written {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.author {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+}

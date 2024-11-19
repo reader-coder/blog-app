@@ -1,8 +1,16 @@
-.container {
+/* .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 4rem;
   min-height: 100vh;
-  padding: 6rem 6rem;
+  padding: 6rem;
   flex-wrap: wrap;
+} */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  place-items: center;
+  min-height: 100vh;
+  padding: 6rem;
 }
